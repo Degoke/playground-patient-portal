@@ -7,9 +7,33 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-white;
+  color-scheme: light;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+/* FHIR Summary Table Styling */
+.hapiPropertyTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.hapiPropertyTable th,
+.hapiPropertyTable td {
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.hapiPropertyTable th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.hapiPropertyTable tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.hapiPropertyTable tbody tr:hover {
+  background-color: #f0f0f0;
 }
